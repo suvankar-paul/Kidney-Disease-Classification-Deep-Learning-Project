@@ -11,7 +11,7 @@ from typing import Any
 import base64
 
 
-
+# ensure annotation ensure correct output format
 @ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
     """reads yaml file and returns
