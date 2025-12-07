@@ -13,7 +13,7 @@ os.makedirs(log_dir, exist_ok=True)
 existing_logs = [f for f in os.listdir(log_dir) if f.endswith(".log")]
 log_count = len(existing_logs) + 1
 
-# Create filename as required -> date-time-running_log{n}.log
+# Create filename as required -> date-time-running_log{n}.log (n = count of log files +1)
 date_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 log_filename = f"{date_time}-running_log_{log_count}.log"
 log_filepath = os.path.join(log_dir, log_filename)
